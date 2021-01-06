@@ -6,7 +6,7 @@ if diff out tests/$test/stdout >/dev/null
 then
 	cumulative="$cumulative OK"
 else
-	cumulative="$cumulative FAILD"
+	cumulative="$cumulative FAILED"
 fi
 for file in O1 O2 O3 O4 O5 O6 O7 O8 O9
 do
@@ -14,12 +14,12 @@ do
 	then
 		cumulative="$cumulative	OK"
 	else
-		cumulative="$cumulative	FAILD"
+		cumulative="$cumulative	FAILED"
 	fi
 done
-if echo "$cumulative " | grep "FAILD" >/dev/null
+if echo "$cumulative " | grep "FAILED" >/dev/null
 then
-	echo "$test: FAILD"
+	echo "$test: FAILED"
 	echo "stdout	O1	O2	O3	O4	O5	O6	O7	O8	O9"
 	echo "$cumulative"
 	echo
