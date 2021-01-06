@@ -8,7 +8,7 @@ then
 else
 	cumulative="$cumulative FAILD"
 fi
-for file in O_P1 O_P4 O_P2 O_P5 O_P3 O_P6
+for file in O_P1 O_P2 O_P3 O_P4 O_P5 O_P6
 do
 	if diff $file tests/$test/$file >/dev/null
 	then
@@ -27,5 +27,4 @@ else
 	echo "	$test:	OK"
 fi
 rm O_P1 O_P4 O_P2 O_P5 O_P3 O_P6
-
 rm out
