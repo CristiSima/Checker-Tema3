@@ -1,10 +1,19 @@
 LOAD basic_P1
-SAVE O_P1 ascii
-SAVE O_P4
+SAVE P1_P1 ascii
+SAVE P1_P4
 LOAD basic_P2
-SAVE O_P2 ascii
-SAVE O_P5
+SAVE P2_P2 ascii
+SAVE P2_P5
 LOAD basic_P3
-SAVE O_P3 ascii
-SAVE O_P6
+SAVE P3_P3 ascii
+SAVE P3_P6
+LOAD basic_P4
+SAVE P4_P1 ascii
+SAVE P4_P4
+LOAD basic_P5
+SAVE P5_P2 ascii
+SAVE P5_P5
+LOAD basic_P6
+SAVE P6_P3 ascii
+SAVE P6_P6
 EXIT
