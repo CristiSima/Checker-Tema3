@@ -20,5 +20,5 @@ done
 for test in $special_tests
 do
 	mkdir output/$test
-	tests/$test/check.sh 2>/div/null
+	tests/$test/check.sh 2>/dev/null
 done
