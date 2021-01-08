@@ -8,7 +8,7 @@ then
 else
 	cumulative="$cumulative FAILED"
 fi
-for file in P1_P1 P1_P4 P2_P2 P2_P5 P3_P3 P3_P6 P4_P1 P4_P4 P5_P2 P5_P5 P6_P3 P6_P6
+for file in P2_P2 P2_P5 P3_P3 P3_P6 P5_P2 P5_P5 P6_P3 P6_P6
 do
 	if diff $file tests/$test/$file >/dev/null
 	then
@@ -22,7 +22,7 @@ done
 if echo "$cumulative " | grep "FAILED" >/dev/null
 then
 	echo "$test: FAILED"
-	echo "stdout	P1_P1	P1_P4	P2_P2	P2_P5	P3_P3	P3_P6	P4_P1	P4_P4	P5_P2	P5_P5	P6_P3	P6_P6"
+	echo "stdout	P2_P2	P2_P5	P3_P3	P3_P6	P5_P2	P5_P5	P6_P3	P6_P6"
 	echo "$cumulative"
 	echo
 else

@@ -1,6 +1,8 @@
 LOAD NULL
+LOAD basic_P1
 LOAD basic_P2
 LOAD basic_P3
+LOAD basic_P4
 LOAD basic_P5
 LOAD basic_P6
 EXIT
