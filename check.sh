@@ -9,8 +9,8 @@ special_tests="SAVE CROP+SELECT ROTATE"
 for test in $tests
 do
 	# echo "Runing test $test"
-	mkdir output/$test
-	cat tests/$test/test | ./image_editor > output/$test/stdout
+	mkdir output/$test &>/dev/null
+	cat tests/$test/test | ./image_editor > output/$test/stdout 2>/dev/null
 	(diff output/$test/stdout tests/$test/stdout &>/dev/null && echo "	$test:	OK") || echo "$test: FAILED"
 	# cat tests/$test | ./image_editor
 	# cat tests/$test | less
@@ -19,6 +19,6 @@ done
 
 for test in $special_tests
 do
-	mkdir output/$test
+	mkdir output/$test &>/dev/null
 	tests/$test/check.sh 2>/dev/null
 done
