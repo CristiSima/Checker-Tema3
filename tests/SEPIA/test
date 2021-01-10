@@ -1,0 +1,13 @@
+LOAD basic_P2
+SEPIA
+SAVE P2 ascii
+LOAD basic_P3
+SEPIA
+SAVE P3 ascii
+SEPIA
+SAVE P3_2 ascii
+SEPIA
+SAVE P3_3 ascii
+SEPIA
+SAVE P3_4 ascii
+EXIT

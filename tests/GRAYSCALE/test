@@ -1,0 +1,9 @@
+LOAD basic_P2
+GRAYSCALE
+SAVE P2 ascii
+LOAD basic_P3
+GRAYSCALE
+SAVE P3 ascii
+GRAYSCALE
+SAVE P3_2 ascii
+EXIT

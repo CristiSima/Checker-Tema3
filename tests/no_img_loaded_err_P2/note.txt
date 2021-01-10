@@ -1,3 +1,6 @@
 Pe forum, in thread-ul "publicarea checker Tema 3 PC", Dorinel FILIP spune:
+'''
 Toate comenzile, cu expetia LOAD vor printa "no image loaded"...
-Pentru EXIS am fi putut face o exceptie, dar nu vom mai modifica testele acum-_-
+Pentru EXIS am fi putut face o exceptie, dar nu vom mai modifica testele acum
+'''
+Deci da... -_-
