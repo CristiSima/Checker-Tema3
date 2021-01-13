@@ -1,0 +1,22 @@
+LOAD basic_P3
+CROP
+SAVE O1 ascii
+LOAD basic_P3
+SELECT ALL
+CROP
+SAVE O2 ascii
+LOAD basic_P3
+SELECT 0 0 1 1
+SELECT -1 -1 0 0
+CROP
+SAVE O3 ascii
+LOAD basic_P3
+SELECT 0 0 3 2
+SELECT -1 -1 0 0
+CROP
+SAVE O4 ascii
+LOAD basic_P3
+SELECT 0 0 0 0
+CROP
+SAVE O5 ascii
+EXIT

@@ -5,7 +5,7 @@ echo "Checker started"
 #echo ""
 rm output/*/* &> /dev/null
 tests="no_img_loaded_err_P1 no_img_loaded_err_P2 LOAD"
-special_tests="SAVE CROP+SELECT ROTATE GRAYSCALE SEPIA"
+special_tests="SAVE CROP+SELECT_gray ROTATE_gray CROP+SELECT_RGB ROTATE_RGB GRAYSCALE SEPIA"
 for test in $tests
 do
 	# echo "Runing test $test"
